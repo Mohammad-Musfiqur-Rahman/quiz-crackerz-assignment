@@ -8,7 +8,7 @@ const Quiz = () => {
     // console.log(quiz)
     return (
         <div>
-            <h1 className='text-6xl text-center'>{allData.name}</h1>
+            <h1 className='text-6xl text-center m-5'>{allData.name}</h1>
             {
                 
                 quiz.map(question => <Questions

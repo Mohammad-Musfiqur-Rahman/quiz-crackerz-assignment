@@ -1,13 +1,16 @@
 import React from 'react';
+import Options from './Options';
 
 const Questions = ({ question }) => {
-    console.log(question);
+    // console.log(question);
     const { question: ques, correctAnswer, options } = question;
     return (
         <div>
-            <h1 className='text-2xl'>Questions: {ques}</h1>
+            <h1 className='text-3xl'> {ques}</h1>
             {
-                options.map(item => <i> {item} </i>)
+                options.map(item => <Options
+                item={item}
+                ></Options>)
             }
         </div>
     );
