@@ -8,11 +8,12 @@ const Quiz = () => {
     // console.log(quiz)
     return (
         <div>
-            {allData.name}
+            <h1 className='text-6xl text-center'>{allData.name}</h1>
             {
                 
                 quiz.map(question => <Questions
                 key={question.id}
+                question={question}
                 ></Questions>
                 )
             }
