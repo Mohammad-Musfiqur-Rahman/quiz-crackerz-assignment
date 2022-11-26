@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Blog from "../Components/Blog/Blog";
+import Error404 from "../Components/Error404";
 import Home from "../Components/Home";
 import Main from "../Components/Main";
 import Quiz from "../Components/Quiz/Quiz";
@@ -29,7 +30,12 @@ export const router = createBrowserRouter([
             {
                 path: '/recharts',
                 element: <Recharts></Recharts>
+            },
+            {
+                path:'*',
+                element: <Error404></Error404>
             }
-        ],
+        ],        
     },
+    
 ])
