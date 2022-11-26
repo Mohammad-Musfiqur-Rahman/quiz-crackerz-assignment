@@ -9,6 +9,7 @@ const Quiz = () => {
     return (
         <div>
             <h1 className='text-6xl text-center m-5'>{allData.name}</h1>
+            
             {
                 
                 quiz.map(question => <Questions

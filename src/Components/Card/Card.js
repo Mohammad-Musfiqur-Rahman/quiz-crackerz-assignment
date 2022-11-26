@@ -5,10 +5,10 @@ const Card = ({ card }) => {
     const { id, name, total, logo } = card;
     // console.log(card)
     return (
-        <div className="card w-96 bg-base-100 shadow-xl image-full">
+        <div className="card bg-base-100 shadow-xl image-full">
             <figure><img src={logo} alt="Shoes" /></figure>
             <div className="card-body">
-                <h2 className="card-title">{name}</h2>
+                <h2 className="card-title text-4xl">{name}</h2>
                 <p>Total Quiz {total}</p>
                 <div className="card-actions justify-end">
                     <Link to={`/quiz/${id}`}>

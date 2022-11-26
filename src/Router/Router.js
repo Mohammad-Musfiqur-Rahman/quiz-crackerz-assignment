@@ -3,6 +3,7 @@ import Blog from "../Components/Blog/Blog";
 import Home from "../Components/Home";
 import Main from "../Components/Main";
 import Quiz from "../Components/Quiz/Quiz";
+import Recharts from "../Components/Recharts/Recharts";
 
 export const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
                 path:'/blog',
                 element: <Blog></Blog>
             },
+            {
+                path: '/recharts',
+                element: <Recharts></Recharts>
+            }
         ],
     },
 ])

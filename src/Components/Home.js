@@ -10,6 +10,8 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
+            <h1 className='text-7xl text-center mt-20'>Quiz</h1>
+            <hr />
             <div className='grid grid-cols-3 gap-4 mt-10'>
                 {
                     cardData.map(card => <Card
@@ -18,6 +20,7 @@ const Home = () => {
                     ></Card>)
                 }
             </div>
+            
 
         </div>
     );
